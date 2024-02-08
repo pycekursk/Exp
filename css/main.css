@@ -58,3 +58,26 @@
     padding-right: 15px;
     padding-left: 15px;
 }
+
+/* Стили для хедера */
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 1px var(--main-bg);
+}
+
+
+/* Стили для футера */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    border-top: solid 1px var(--main-bg);
+}
+
+.content {
+    flex: 1;
+    padding: 50px; /* Регулируйте в соответствии с вашими потребностями */
+}

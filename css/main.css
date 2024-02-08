@@ -22,7 +22,8 @@ body.loading {
     transition: background-color 250ms;
 }
 
-a:not(img) {
+a:not(img),
+a:not(.icon) {
     text-decoration: none;
     color: initial;
     opacity: 0.85;

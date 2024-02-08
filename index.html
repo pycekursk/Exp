@@ -1,0 +1,114 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Компания "Экспедиция" | Официальный сайт</title>
+
+    <style>
+        :root {
+            --main-bg: orange;
+            --main: white;
+
+        }
+
+        body {
+            background-color: var(--main);
+        }
+
+        body.loading {
+            background-color: var(--main-bg);
+            transition: background-color 250ms;
+        }
+
+        .table {
+            height: fit-content;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            /* padding: .5em; */
+
+        }
+
+        .cell {
+            flex: 1 1 30%;
+            min-width: 200px;
+            min-height: 200px;
+            margin: .25rem;
+            padding: .25rem;
+            border-radius: .5em;
+            border: solid 1px var(--main-bg);
+            position: relative;
+        }
+
+        .cell .header {
+            text-align: center;
+        }
+
+        .cell .footer {
+            position: absolute;
+            left: .25rem;
+            right: .25rem;
+            bottom: .25rem;
+        }
+    </style>
+
+</head>
+
+<body class="loading">
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="table">
+                <div class="cell">
+                    <div class="header">РЕСТОРАН</div>
+                    <div class="body">...</div>
+                    <div class="footer">...</div>
+                </div>
+                <div class="cell">
+                    <div class="header">ФАКТОРИЯ</div>
+                    <div class="body">...</div>
+                    <div class="footer">...</div>
+                </div>
+                <div class="cell">
+                    <div class="header">ПАРК</div>
+                    <div class="body">...</div>
+                    <div class="footer">...</div>
+                </div>
+                <div class="cell">
+                    <div class="header">БАНИ</div>
+                    <div class="body">...</div>
+                    <div class="footer">...</div>
+                </div>
+                <div class="cell">
+                    <div class="header">ПЛОТЫ</div>
+                    <div class="body">...</div>
+                    <div class="footer">...</div>
+                </div>
+                <div class="cell">
+                    <div class="header">БАРТЕРИЯ</div>
+                    <div class="body">...</div>
+                    <div class="footer">...</div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.remove('loading');
+        });
+    </script>
+</body>
+
+</html>

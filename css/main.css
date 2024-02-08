@@ -4,7 +4,6 @@
 
 }
 
-
 html,
 body {
     margin: 0;
@@ -23,6 +22,20 @@ body.loading {
     transition: background-color 250ms;
 }
 
+a:not(img) {
+    text-decoration: none;
+    color: initial;
+    opacity: 0.85;
+    transition: opacity 100ms;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.shadow {
+    box-shadow: 1px 2px 12px 2px rgba(0, 0, 0, 0.15) !important;
+}
 
 /* Extra small devices (xs): <576px */
 .container {
@@ -70,7 +83,9 @@ body.loading {
 .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .logo-wrapper img {
@@ -135,6 +150,13 @@ header {
     border-bottom: solid 1px var(--main-bg);
 }
 
+header .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    justify-content: space-evenly;
+    font-size: x-large;
+}
 
 /* Стили для футера */
 footer {

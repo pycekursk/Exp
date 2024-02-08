@@ -6,72 +6,16 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
     <title>Компания "Экспедиция" | Официальный сайт</title>
-
-    <style>
-        :root {
-            --main-bg: orange;
-            --main: white;
-
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            background-color: var(--main);
-        }
-
-        body.loading {
-            background-color: var(--main-bg);
-            transition: background-color 250ms;
-        }
-
-        .table {
-            height: fit-content;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            /* padding: .5em; */
-
-        }
-
-        .cell {
-            flex: 1 1 30%;
-            min-width: 200px;
-            min-height: 200px;
-            margin: .25rem;
-            padding: .25rem;
-            border-radius: .5em;
-            border: solid 1px var(--main-bg);
-            position: relative;
-        }
-
-        .cell .header {
-            text-align: center;
-            z-index: 1;
-            position: relative;
-        }
-
-        .cell .footer {
-            position: absolute;
-            left: .25rem;
-            right: .25rem;
-            bottom: .25rem;
-        }
-    </style>
-
 </head>
 
 <body class="loading">
     <header>
-
+        <div class="wrapper">
+            <div class="logo-wrapper">
+                <img src="src/img/logo_exp.svg" alt="Логотип 'Экспедиция'" width="150">
+            </div>
+            <div class="contacts"></div>
+        </div>
     </header>
     <main class="content">
         <div class="container">
@@ -113,12 +57,22 @@
                     <div class="bg"></div>
                 </div>
             </div>
-            
+
         </div>
     </main>
 
     <footer>
-
+        <div class="wrapper">
+            <div class="contacts">
+                <a href="/" target="_blank">
+                    <div class="telegram"></div>
+                </a>
+                <a href="/" target="_blank">
+                    <div class="vk"></div>
+                </a>
+            </div>
+            <div class="info"></div>
+        </div>
     </footer>
 
     <script>
